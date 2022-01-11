@@ -1,0 +1,901 @@
+2019-08-22 09:14:22,350 [main] INFO  ApplicationView - Oracle SQL Developer Data Modeler 17.4.0.355.2121
+2019-08-22 09:14:50,716 [AsynchronousChangeList Timer] WARN  SVNClientHelper - doStatusSVN
+org.tmatesoft.svn.core.SVNAuthenticationException: svn: E170001: Authentication required for '<https://viewnext-caf:443> VisualSVN Server'
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:47)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:41)
+	at org.tmatesoft.svn.core.internal.wc.DefaultSVNAuthenticationManager.getFirstAuthentication(DefaultSVNAuthenticationManager.java:203)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:716)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:398)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:386)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.performHttpRequest(DAVConnection.java:863)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.exchangeCapabilities(DAVConnection.java:699)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.open(DAVConnection.java:118)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.openConnection(DAVRepository.java:1049)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.checkPath(DAVRepository.java:231)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:78)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:27)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgOperationRunner.run(SvnNgOperationRunner.java:20)
+	at org.tmatesoft.svn.core.internal.wc2.SvnOperationRunner.run(SvnOperationRunner.java:21)
+	at org.tmatesoft.svn.core.wc2.SvnOperationFactory.run(SvnOperationFactory.java:1235)
+	at org.tmatesoft.svn.core.wc2.SvnOperation.run(SvnOperation.java:294)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:363)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:479)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:460)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.getStatuses(SVNClientHelper.java:1454)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.findChanges(DataModelerChangesTimerTask.java:240)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.run(DataModelerChangesTimerTask.java:127)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2019-08-22 10:06:42,025 [Thread-53] INFO  RenderPDFReport - Using XSLT 1.0
+2019-08-22 10:06:43,191 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,191 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,191 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile guessVerticalMetricsFromGlyphBBox
+2019-08-22 10:06:43,191 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: xHeight value could not be determined. The font may not work as expected.
+2019-08-22 10:06:43,207 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,207 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,222 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,222 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,347 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:43,347 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/arimon__.ttf. Reason: 8768
+2019-08-22 10:06:43,363 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:43,363 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/AxureHandwriting-Bold.otf. Reason: OpenType fonts with CFF data are not supported, yet
+2019-08-22 10:06:43,363 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:43,363 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/AxureHandwriting-BoldItalic.otf. Reason: OpenType fonts with CFF data are not supported, yet
+2019-08-22 10:06:43,363 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:43,363 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/AxureHandwriting-Italic.otf. Reason: OpenType fonts with CFF data are not supported, yet
+2019-08-22 10:06:43,363 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:43,363 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/AxureHandwriting.otf. Reason: OpenType fonts with CFF data are not supported, yet
+2019-08-22 10:06:43,379 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,379 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,410 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,410 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,488 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,488 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,488 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,488 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,488 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,488 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,504 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:43,504 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:43,504 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:43,504 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/BSSYM7.TTF. Reason: TrueType font is not supported: file:/C:/windows/FONTS/BSSYM7.TTF
+2019-08-22 10:06:43,863 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,863 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:43,894 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:43 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:43,894 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,207 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,207 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,222 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,222 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,378 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,378 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,441 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,441 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,456 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,456 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,456 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,456 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,456 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,456 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,472 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,472 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,503 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,503 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,503 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,503 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,503 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,503 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,503 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,503 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,535 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,535 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,535 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,535 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,800 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:44,800 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:44,800 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:44,800 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/marlett.ttf. Reason: TrueType font is not supported: file:/C:/windows/FONTS/marlett.ttf
+2019-08-22 10:06:44,831 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,831 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,847 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,847 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,863 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,863 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,863 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,863 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:44,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:44,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:44,878 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/MTEXTRA.TTF. Reason: TrueType font is not supported: file:/C:/windows/FONTS/MTEXTRA.TTF
+2019-08-22 10:06:44,925 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:44,925 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:44,925 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:44,925 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/OUTLOOK.TTF. Reason: TrueType font is not supported: file:/C:/windows/FONTS/OUTLOOK.TTF
+2019-08-22 10:06:44,925 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,925 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,941 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,941 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,941 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,941 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,941 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,941 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,956 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,956 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:44,988 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:44 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:44,988 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,003 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:45,003 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,003 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:45,003 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:45,003 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:45,003 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/REFSPCL.TTF. Reason: TrueType font is not supported: file:/C:/windows/FONTS/REFSPCL.TTF
+2019-08-22 10:06:45,019 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:45,019 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,019 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:45,019 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:45,019 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:45,019 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/sapdn.ttf. Reason: TrueType font is not supported: file:/C:/windows/FONTS/sapdn.ttf
+2019-08-22 10:06:45,050 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:45,050 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:45,050 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:45,050 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/sapin.ttf. Reason: TrueType font is not supported: file:/C:/windows/FONTS/sapin.ttf
+2019-08-22 10:06:45,081 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:45,081 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,081 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:45,081 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,425 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:45,425 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,425 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:45,425 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:45,425 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:45,425 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/symbol.ttf. Reason: TrueType font is not supported: file:/C:/windows/FONTS/symbol.ttf
+2019-08-22 10:06:45,472 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:45,472 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile determineAscDesc
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Ascender and descender together are larger than the em box. This could lead to a wrong baseline placement in Apache FOP.
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/webdings.ttf. Reason: TrueType font is not supported: file:/C:/windows/FONTS/webdings.ttf
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/wingding.ttf. Reason: TrueType font is not supported: file:/C:/windows/FONTS/wingding.ttf
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:45,550 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/WINGDNG2.TTF. Reason: TrueType font is not supported: file:/C:/windows/FONTS/WINGDNG2.TTF
+2019-08-22 10:06:45,566 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.truetype.TTFFile readCMAP
+2019-08-22 10:06:45,566 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unsupported TrueType font: Unicode cmap table not present. Aborting
+2019-08-22 10:06:45,566 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:45 AM org.apache.fop.fonts.autodetect.FontInfoFinder find
+2019-08-22 10:06:45,566 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Unable to load font file: file:/C:/windows/FONTS/WINGDNG3.TTF. Reason: TrueType font is not supported: file:/C:/windows/FONTS/WINGDNG3.TTF
+2019-08-22 10:06:47,518 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:06:47 AM org.apache.fop.fonts.FontInfo notifyFontReplacement
+2019-08-22 10:06:47,518 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Font 'Tahoma,italic,400' not found. Substituting with 'Tahoma,normal,400'.
+2019-08-22 10:06:48,675 [Thread-53] ERROR RenderPDFReport - PDF report generation FOP message: If the above line is something like 'Unable to access jarfile' that usually means that JVM parameter entered in JVM Options text box is not according to specifications.
+2019-08-22 10:08:50,682 [Thread-55] INFO  RenderPDFReport - Using XSLT 1.0
+2019-08-22 10:08:52,575 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.fo.PropertyList convertAttributeToProperty
+2019-08-22 10:08:52,575 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: GRAVE: Ignoring property: width="true" (No conversion defined true; property:'width')
+2019-08-22 10:08:52,856 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.fonts.FontInfo notifyFontReplacement
+2019-08-22 10:08:52,856 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Font 'Tahoma,normal,700' not found. Substituting with 'Tahoma,normal,400'.
+2019-08-22 10:08:52,887 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.table.TableLayoutManager getNextKnuthElements
+2019-08-22 10:08:52,887 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: INFORMACIÓN: table-layout="fixed" and width="auto", but auto-layout not supported => assuming width="100%"
+2019-08-22 10:08:52,903 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,903 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 8490mpt. (fo:block, "ANEXOS_INFORMES_FRW_ADJUNTO_FK
+2019-08-22 10:08:52,903 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ANEXOS_INFORMES_INFORMES_FK")
+2019-08-22 10:08:52,919 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,919 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 12241mpt. (fo:block, "INFORMES_PRODUCTOS_PROYECTOS_FK
+2019-08-22 10:08:52,919 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: INFORMES_ESTADOS_INFORMES_FK
+2019-08-22 10:08:52,919 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: INFORMES)
+2019-08-22 10:08:52,919 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,919 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 28514mpt. (fo:block, "OBSERVACIONES_INFORMES_RESPUESTAS_FK")
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 5277mpt. (fo:block, "OPCIONES_PREGUNTAS_PREGUNTAS_FK
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: OPCIONES_PREGUNTAS_OPCIONES_FK")
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 10055mpt. (fo:block, "OPCIONES_PREGUNTAS_PREGUNTAS_FK
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: OPCIONES_PREGUNTAS_OPCIONES_FK")
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 16798mpt. (fo:block, "PRODUCTOS_PROYECTOS_PRODUCTOS_FK
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: PRODUCTOS_PROYECTOS_PROYECTOS_FK")
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 18215mpt. (fo:block, "PRODUCTOS_PROYECTOS_PRODUCTOS_FK
+2019-08-22 10:08:52,934 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: PRODUCTOS_PROYECTOS_PROYECTOS_FK")
+2019-08-22 10:08:52,950 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,950 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 7362mpt. (fo:block, "SECCIONES_INFORMES_INFORMES_FK
+2019-08-22 10:08:52,950 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: SECCIONES_INFORMES_SECCIONES_FK")
+2019-08-22 10:08:52,950 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:08:52 AM org.apache.fop.layoutmgr.inline.LineLayoutManager$LineBreakingAlgorithm updateData2
+2019-08-22 10:08:52,950 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Line 1 of a paragraph overflows the available area by 4536mpt. (fo:block, "SECCIONES_INFORMES_INFORMES_FK
+2019-08-22 10:08:52,950 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: SECCIONES_INFORMES_SECCIONES_FK")
+2019-08-22 10:08:53,153 [Thread-55] ERROR RenderPDFReport - PDF report generation FOP message: If the above line is something like 'Unable to access jarfile' that usually means that JVM parameter entered in JVM Options text box is not according to specifications.
+2019-08-22 10:10:18,486 [AWT-EventQueue-0] ERROR StandardReportConfigurationsPersistence - Unable to save standard reports: 
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\standard_reports_configurations.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.swingui.wizards.reports.StandardReportConfigurationsPersistence.writeToFile(StandardReportConfigurationsPersistence.java:149)
+	at oracle.dbtools.crest.swingui.wizards.reports.StandardReportConfigurationsPersistence.saveStandardReportConfigurations(StandardReportConfigurationsPersistence.java:139)
+	at oracle.dbtools.crest.swingui.wizards.reports.StandardReportsConfigurationDialog$SaveAction.actionPerformed(StandardReportsConfigurationDialog.java:1522)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.AWTEventMulticaster.mouseReleased(AWTEventMulticaster.java:290)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at oracle.javatools.internal.ui.EventQueueWrapper._dispatchEvent(EventQueueWrapper.java:169)
+	at oracle.javatools.internal.ui.EventQueueWrapper.dispatchEvent(EventQueueWrapper.java:151)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:184)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:229)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:227)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:227)
+	at java.awt.Dialog.show(Dialog.java:1084)
+	at java.awt.Component.show(Component.java:1671)
+	at java.awt.Component.setVisible(Component.java:1623)
+	at java.awt.Window.setVisible(Window.java:1014)
+	at java.awt.Dialog.setVisible(Dialog.java:1005)
+	at oracle.dbtools.crest.swingui.wizards.reports.StandardReportsConfigurationDialog.showDialog(StandardReportsConfigurationDialog.java:895)
+	at oracle.dbtools.crest.swingui.wizards.reports.ReportsGenerationDialog$ShowStandardReportConfigurationsAction.actionPerformed(ReportsGenerationDialog.java:1428)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.plaf.basic.BasicButtonListener.mouseReleased(BasicButtonListener.java:252)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at oracle.javatools.internal.ui.EventQueueWrapper._dispatchEvent(EventQueueWrapper.java:169)
+	at oracle.javatools.internal.ui.EventQueueWrapper.dispatchEvent(EventQueueWrapper.java:151)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:109)
+	at java.awt.WaitDispatchSupport$2.run(WaitDispatchSupport.java:184)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:229)
+	at java.awt.WaitDispatchSupport$4.run(WaitDispatchSupport.java:227)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.awt.WaitDispatchSupport.enter(WaitDispatchSupport.java:227)
+	at java.awt.Dialog.show(Dialog.java:1084)
+	at java.awt.Component.show(Component.java:1671)
+	at java.awt.Component.setVisible(Component.java:1623)
+	at java.awt.Window.setVisible(Window.java:1014)
+	at java.awt.Dialog.setVisible(Dialog.java:1005)
+	at oracle.dbtools.crest.swingui.wizards.reports.ReportsGenerationDialog.showDialog(ReportsGenerationDialog.java:475)
+	at oracle.dbtools.crest.swingui.ControllerApplication$ShowReports.execute(ControllerApplication.java:5284)
+	at oracle.dbtools.crest.swingui.ControllerApplication$ShowReports.doActionPerformed(ControllerApplication.java:5278)
+	at oracle.dbtools.crest.swingui.MDBAction$ActionInvoker.run(MDBAction.java:248)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at oracle.javatools.internal.ui.EventQueueWrapper._dispatchEvent(EventQueueWrapper.java:169)
+	at oracle.javatools.internal.ui.EventQueueWrapper.dispatchEvent(EventQueueWrapper.java:151)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2019-08-22 10:10:38,021 [Thread-58] INFO  RenderPDFReport - Using XSLT 1.0
+2019-08-22 10:10:41,095 [Thread-58] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:10:41 AM org.apache.fop.fonts.FontInfo notifyFontReplacement
+2019-08-22 10:10:41,095 [Thread-58] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Font 'Tahoma,italic,400' not found. Substituting with 'Tahoma,normal,400'.
+2019-08-22 10:10:42,423 [Thread-58] ERROR RenderPDFReport - PDF report generation FOP message: If the above line is something like 'Unable to access jarfile' that usually means that JVM parameter entered in JVM Options text box is not according to specifications.
+2019-08-22 10:13:53,917 [Thread-59] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 10:16:02,308 [Thread-63] INFO  RenderPDFReport - Using XSLT 1.0
+2019-08-22 10:16:05,354 [Thread-63] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 10:16:05 AM org.apache.fop.fonts.FontInfo notifyFontReplacement
+2019-08-22 10:16:05,370 [Thread-63] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Font 'Tahoma,italic,400' not found. Substituting with 'Tahoma,normal,400'.
+2019-08-22 10:16:06,729 [Thread-63] ERROR RenderPDFReport - PDF report generation FOP message: If the above line is something like 'Unable to access jarfile' that usually means that JVM parameter entered in JVM Options text box is not according to specifications.
+2019-08-22 10:20:06,127 [Thread-65] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 10:21:00,231 [Thread-67] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 10:21:30,604 [Thread-69] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 10:22:20,049 [Thread-71] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 10:25:45,513 [Thread-73] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 10:29:14,260 [Thread-76] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 10:29:26,252 [Thread-80] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 10:32:32,687 [AWT-EventQueue-0] ERROR ControllerApplication - Error Closing Design!
+java.lang.NullPointerException
+	at javax.swing.JComponent.getComponentGraphics(JComponent.java:740)
+	at javax.swing.JComponent.paint(JComponent.java:1001)
+	at javax.swing.JComponent.update(JComponent.java:965)
+	at oracle.dbtools.crest.swingui.ApplicationView.removeDesign(ApplicationView.java:2731)
+	at oracle.dbtools.crest.swingui.ControllerApplication$CloseDesign.execute(ControllerApplication.java:2683)
+	at oracle.dbtools.crest.swingui.ApplicationView.closeAllDesigns(ApplicationView.java:2757)
+	at oracle.dbtools.crest.swingui.ApplicationView.exitApplication(ApplicationView.java:2070)
+	at oracle.dbtools.crest.fcp.DataModelerAddin.canShutdown(DataModelerAddin.java:2889)
+	at oracle.ide.cmd.ExitCommand.canShutdown(ExitCommand.java:252)
+	at oracle.ide.cmd.ExitCommand.doit(ExitCommand.java:509)
+	at oracle.ide.controller.CommandProcessor.invoke(CommandProcessor.java:377)
+	at oracle.ide.IdeCore.quit(IdeCore.java:844)
+	at oracle.ide.Ide.quit(Ide.java:651)
+	at oracle.ide.IdeController.handleEvent(IdeController.java:641)
+	at oracle.ide.controller.IdeAction.performAction(IdeAction.java:663)
+	at oracle.ide.controller.IdeAction.actionPerformedImpl(IdeAction.java:1159)
+	at oracle.ide.controller.IdeAction.actionPerformed(IdeAction.java:618)
+	at javax.swing.AbstractButton.fireActionPerformed(AbstractButton.java:2022)
+	at javax.swing.AbstractButton$Handler.actionPerformed(AbstractButton.java:2348)
+	at javax.swing.DefaultButtonModel.fireActionPerformed(DefaultButtonModel.java:402)
+	at javax.swing.DefaultButtonModel.setPressed(DefaultButtonModel.java:259)
+	at javax.swing.AbstractButton.doClick(AbstractButton.java:376)
+	at javax.swing.plaf.basic.BasicMenuItemUI.doClick(BasicMenuItemUI.java:833)
+	at javax.swing.plaf.basic.BasicMenuItemUI$Handler.mouseReleased(BasicMenuItemUI.java:877)
+	at java.awt.Component.processMouseEvent(Component.java:6533)
+	at javax.swing.JComponent.processMouseEvent(JComponent.java:3324)
+	at java.awt.Component.processEvent(Component.java:6298)
+	at java.awt.Container.processEvent(Container.java:2236)
+	at java.awt.Component.dispatchEventImpl(Component.java:4889)
+	at java.awt.Container.dispatchEventImpl(Container.java:2294)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.LightweightDispatcher.retargetMouseEvent(Container.java:4888)
+	at java.awt.LightweightDispatcher.processMouseEvent(Container.java:4525)
+	at java.awt.LightweightDispatcher.dispatchEvent(Container.java:4466)
+	at java.awt.Container.dispatchEventImpl(Container.java:2280)
+	at java.awt.Window.dispatchEventImpl(Window.java:2746)
+	at java.awt.Component.dispatchEvent(Component.java:4711)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:758)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:90)
+	at java.awt.EventQueue$4.run(EventQueue.java:731)
+	at java.awt.EventQueue$4.run(EventQueue.java:729)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:728)
+	at oracle.javatools.internal.ui.EventQueueWrapper._dispatchEvent(EventQueueWrapper.java:169)
+	at oracle.javatools.internal.ui.EventQueueWrapper.dispatchEvent(EventQueueWrapper.java:151)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+2019-08-22 11:20:27,560 [main] INFO  ApplicationView - Oracle SQL Developer Data Modeler 17.4.0.355.2121
+2019-08-22 11:20:40,137 [AsynchronousChangeList Timer] WARN  SVNClientHelper - doStatusSVN
+org.tmatesoft.svn.core.SVNAuthenticationException: svn: E170001: Authentication required for '<https://viewnext-caf:443> VisualSVN Server'
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:47)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:41)
+	at org.tmatesoft.svn.core.internal.wc.DefaultSVNAuthenticationManager.getFirstAuthentication(DefaultSVNAuthenticationManager.java:203)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:716)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:398)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:386)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.performHttpRequest(DAVConnection.java:863)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.exchangeCapabilities(DAVConnection.java:699)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.open(DAVConnection.java:118)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.openConnection(DAVRepository.java:1049)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.checkPath(DAVRepository.java:231)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:78)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:27)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgOperationRunner.run(SvnNgOperationRunner.java:20)
+	at org.tmatesoft.svn.core.internal.wc2.SvnOperationRunner.run(SvnOperationRunner.java:21)
+	at org.tmatesoft.svn.core.wc2.SvnOperationFactory.run(SvnOperationFactory.java:1235)
+	at org.tmatesoft.svn.core.wc2.SvnOperation.run(SvnOperation.java:294)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:363)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:479)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:460)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.getStatuses(SVNClientHelper.java:1454)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.findChanges(DataModelerChangesTimerTask.java:240)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.run(DataModelerChangesTimerTask.java:127)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2019-08-22 11:21:24,167 [Thread-29] INFO  RenderPDFReport - Using XSLT 1.0
+2019-08-22 11:21:27,344 [Thread-29] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 11:21:27 AM org.apache.fop.fonts.FontInfo notifyFontReplacement
+2019-08-22 11:21:27,344 [Thread-29] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Font 'Tahoma,italic,400' not found. Substituting with 'Tahoma,normal,400'.
+2019-08-22 11:21:28,625 [Thread-29] ERROR RenderPDFReport - PDF report generation FOP message: If the above line is something like 'Unable to access jarfile' that usually means that JVM parameter entered in JVM Options text box is not according to specifications.
+2019-08-22 11:23:12,576 [Thread-31] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 11:23:55,617 [Thread-33] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 11:28:35,973 [Thread-41] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 11:29:05,462 [Thread-45] INFO  RenderPDFReport - Using XSLT 1.0
+2019-08-22 11:29:08,395 [Thread-45] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 11:29:08 AM org.apache.fop.fonts.FontInfo notifyFontReplacement
+2019-08-22 11:29:08,395 [Thread-45] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Font 'Tahoma,italic,400' not found. Substituting with 'Tahoma,normal,400'.
+2019-08-22 11:29:09,770 [Thread-45] ERROR RenderPDFReport - PDF report generation FOP message: If the above line is something like 'Unable to access jarfile' that usually means that JVM parameter entered in JVM Options text box is not according to specifications.
+2019-08-22 11:31:00,402 [Thread-47] INFO  RenderPDFReport - Using XSLT 1.0
+2019-08-22 11:31:03,516 [Thread-47] ERROR RenderPDFReport - PDF report generation FOP message: ago 22, 2019 11:31:03 AM org.apache.fop.fonts.FontInfo notifyFontReplacement
+2019-08-22 11:31:03,516 [Thread-47] ERROR RenderPDFReport - PDF report generation FOP message: ADVERTENCIA: Font 'Tahoma,italic,400' not found. Substituting with 'Tahoma,normal,400'.
+2019-08-22 11:31:04,845 [Thread-47] ERROR RenderPDFReport - PDF report generation FOP message: If the above line is something like 'Unable to access jarfile' that usually means that JVM parameter entered in JVM Options text box is not according to specifications.
+2019-08-22 14:58:25,767 [Thread-79] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-22 14:58:41,086 [Thread-83] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-23 08:53:57,172 [main] INFO  ApplicationView - Oracle SQL Developer Data Modeler 17.4.0.355.2121
+2019-08-23 08:54:08,102 [AsynchronousChangeList Timer] WARN  SVNClientHelper - doStatusSVN
+org.tmatesoft.svn.core.SVNAuthenticationException: svn: E170001: Authentication required for '<https://viewnext-caf:443> VisualSVN Server'
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:47)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:41)
+	at org.tmatesoft.svn.core.internal.wc.DefaultSVNAuthenticationManager.getFirstAuthentication(DefaultSVNAuthenticationManager.java:203)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:716)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:398)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:386)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.performHttpRequest(DAVConnection.java:863)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.exchangeCapabilities(DAVConnection.java:699)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.open(DAVConnection.java:118)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.openConnection(DAVRepository.java:1049)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.checkPath(DAVRepository.java:231)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:78)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:27)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgOperationRunner.run(SvnNgOperationRunner.java:20)
+	at org.tmatesoft.svn.core.internal.wc2.SvnOperationRunner.run(SvnOperationRunner.java:21)
+	at org.tmatesoft.svn.core.wc2.SvnOperationFactory.run(SvnOperationFactory.java:1235)
+	at org.tmatesoft.svn.core.wc2.SvnOperation.run(SvnOperation.java:294)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:363)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:479)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:460)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.getStatuses(SVNClientHelper.java:1454)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.findChanges(DataModelerChangesTimerTask.java:240)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.run(DataModelerChangesTimerTask.java:127)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2019-08-23 11:09:10,331 [Thread-116] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-23 11:10:32,817 [Thread-123] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-23 12:19:40,501 [main] INFO  ApplicationView - Oracle SQL Developer Data Modeler 17.4.0.355.2121
+2019-08-23 12:19:49,919 [AsynchronousChangeList Timer] WARN  SVNClientHelper - doStatusSVN
+org.tmatesoft.svn.core.SVNAuthenticationException: svn: E170001: Authentication required for '<https://viewnext-caf:443> VisualSVN Server'
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:47)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:41)
+	at org.tmatesoft.svn.core.internal.wc.DefaultSVNAuthenticationManager.getFirstAuthentication(DefaultSVNAuthenticationManager.java:203)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:716)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:398)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:386)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.performHttpRequest(DAVConnection.java:863)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.exchangeCapabilities(DAVConnection.java:699)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.open(DAVConnection.java:118)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.openConnection(DAVRepository.java:1049)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.checkPath(DAVRepository.java:231)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:78)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:27)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgOperationRunner.run(SvnNgOperationRunner.java:20)
+	at org.tmatesoft.svn.core.internal.wc2.SvnOperationRunner.run(SvnOperationRunner.java:21)
+	at org.tmatesoft.svn.core.wc2.SvnOperationFactory.run(SvnOperationFactory.java:1235)
+	at org.tmatesoft.svn.core.wc2.SvnOperation.run(SvnOperation.java:294)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:363)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:479)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:460)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.getStatuses(SVNClientHelper.java:1454)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.findChanges(DataModelerChangesTimerTask.java:240)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.run(DataModelerChangesTimerTask.java:127)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2019-08-23 12:19:58,739 [Thread-27] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-26 09:31:47,459 [main] INFO  ApplicationView - Oracle SQL Developer Data Modeler 17.4.0.355.2121
+2019-08-26 09:33:31,105 [AsynchronousChangeList Timer] WARN  SVNClientHelper - doStatusSVN
+org.tmatesoft.svn.core.SVNAuthenticationException: svn: E170001: Authentication required for '<https://viewnext-caf:443> VisualSVN Server'
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:47)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:41)
+	at org.tmatesoft.svn.core.internal.wc.DefaultSVNAuthenticationManager.getFirstAuthentication(DefaultSVNAuthenticationManager.java:203)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:716)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:398)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:386)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.performHttpRequest(DAVConnection.java:863)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.exchangeCapabilities(DAVConnection.java:699)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.open(DAVConnection.java:118)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.openConnection(DAVRepository.java:1049)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.checkPath(DAVRepository.java:231)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:78)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:27)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgOperationRunner.run(SvnNgOperationRunner.java:20)
+	at org.tmatesoft.svn.core.internal.wc2.SvnOperationRunner.run(SvnOperationRunner.java:21)
+	at org.tmatesoft.svn.core.wc2.SvnOperationFactory.run(SvnOperationFactory.java:1235)
+	at org.tmatesoft.svn.core.wc2.SvnOperation.run(SvnOperation.java:294)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:363)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:479)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:460)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.getStatuses(SVNClientHelper.java:1454)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.findChanges(DataModelerChangesTimerTask.java:240)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.run(DataModelerChangesTimerTask.java:127)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2019-08-26 11:31:15,129 [Thread-40] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-26 14:33:30,349 [Thread-56] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-08-26 14:42:22,056 [Thread-59] ERROR XMLTransformationManager - No se puede escribir el documento en el archivo: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml
+java.io.FileNotFoundException: C:\Program Files (x86)\datamodeler\datamodeler\types\defaultdomains.xml (Acceso denegado)
+	at java.io.FileOutputStream.open0(Native Method)
+	at java.io.FileOutputStream.open(FileOutputStream.java:270)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:213)
+	at java.io.FileOutputStream.<init>(FileOutputStream.java:162)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDocument(XMLTransformationManager.java:3899)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDefaultDomain(XMLTransformationManager.java:4300)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDomains(XMLTransformationManager.java:4248)
+	at oracle.dbtools.crest.model.metadata.XMLTransformationManager.saveDesign(XMLTransformationManager.java:301)
+	at oracle.dbtools.crest.model.design.Design.saveAll(Design.java:2147)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveAll(ControllerApplication.java:4025)
+	at oracle.dbtools.crest.swingui.ControllerApplication.saveDesign(ControllerApplication.java:3005)
+	at oracle.dbtools.crest.swingui.ControllerApplication.access$6300(ControllerApplication.java:121)
+	at oracle.dbtools.crest.swingui.ControllerApplication$SaveAll$1.run(ControllerApplication.java:2917)
+2019-09-06 12:37:51,129 [main] INFO  ApplicationView - Oracle SQL Developer Data Modeler 17.4.0.355.2121
+2019-09-06 12:38:01,066 [AsynchronousChangeList Timer] WARN  SVNClientHelper - doStatusSVN
+org.tmatesoft.svn.core.SVNAuthenticationException: svn: E170001: Authentication required for '<https://viewnext-caf:443> VisualSVN Server'
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:47)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:41)
+	at org.tmatesoft.svn.core.internal.wc.DefaultSVNAuthenticationManager.getFirstAuthentication(DefaultSVNAuthenticationManager.java:203)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:716)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:398)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:386)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.performHttpRequest(DAVConnection.java:863)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.exchangeCapabilities(DAVConnection.java:699)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.open(DAVConnection.java:118)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.openConnection(DAVRepository.java:1049)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.checkPath(DAVRepository.java:231)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:78)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:27)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgOperationRunner.run(SvnNgOperationRunner.java:20)
+	at org.tmatesoft.svn.core.internal.wc2.SvnOperationRunner.run(SvnOperationRunner.java:21)
+	at org.tmatesoft.svn.core.wc2.SvnOperationFactory.run(SvnOperationFactory.java:1235)
+	at org.tmatesoft.svn.core.wc2.SvnOperation.run(SvnOperation.java:294)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:363)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:479)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:460)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.getStatuses(SVNClientHelper.java:1454)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.findChanges(DataModelerChangesTimerTask.java:240)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.run(DataModelerChangesTimerTask.java:127)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2019-09-06 12:43:27,617 [main] INFO  ApplicationView - Oracle SQL Developer Data Modeler 17.4.0.355.2121
+2019-09-06 12:43:36,538 [AsynchronousChangeList Timer] WARN  SVNClientHelper - doStatusSVN
+org.tmatesoft.svn.core.SVNAuthenticationException: svn: E170001: Authentication required for '<https://viewnext-caf:443> VisualSVN Server'
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:47)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:41)
+	at org.tmatesoft.svn.core.internal.wc.DefaultSVNAuthenticationManager.getFirstAuthentication(DefaultSVNAuthenticationManager.java:203)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:716)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:398)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:386)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.performHttpRequest(DAVConnection.java:863)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.exchangeCapabilities(DAVConnection.java:699)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.open(DAVConnection.java:118)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.openConnection(DAVRepository.java:1049)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.checkPath(DAVRepository.java:231)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:78)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:27)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgOperationRunner.run(SvnNgOperationRunner.java:20)
+	at org.tmatesoft.svn.core.internal.wc2.SvnOperationRunner.run(SvnOperationRunner.java:21)
+	at org.tmatesoft.svn.core.wc2.SvnOperationFactory.run(SvnOperationFactory.java:1235)
+	at org.tmatesoft.svn.core.wc2.SvnOperation.run(SvnOperation.java:294)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:363)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:479)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:460)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.getStatuses(SVNClientHelper.java:1454)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.findChanges(DataModelerChangesTimerTask.java:240)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.run(DataModelerChangesTimerTask.java:127)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
+2019-09-11 15:00:56,266 [main] INFO  ApplicationView - Oracle SQL Developer Data Modeler 17.4.0.355.2121
+2019-09-11 15:01:05,860 [AsynchronousChangeList Timer] WARN  SVNClientHelper - doStatusSVN
+org.tmatesoft.svn.core.SVNAuthenticationException: svn: E170001: Authentication required for '<https://viewnext-caf:443> VisualSVN Server'
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:47)
+	at org.tmatesoft.svn.core.internal.wc.SVNErrorManager.authenticationFailed(SVNErrorManager.java:41)
+	at org.tmatesoft.svn.core.internal.wc.DefaultSVNAuthenticationManager.getFirstAuthentication(DefaultSVNAuthenticationManager.java:203)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:716)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:398)
+	at org.tmatesoft.svn.core.internal.io.dav.http.HTTPConnection.request(HTTPConnection.java:386)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.performHttpRequest(DAVConnection.java:863)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.exchangeCapabilities(DAVConnection.java:699)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVConnection.open(DAVConnection.java:118)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.openConnection(DAVRepository.java:1049)
+	at org.tmatesoft.svn.core.internal.io.dav.DAVRepository.checkPath(DAVRepository.java:231)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:78)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgGetStatus.run(SvnNgGetStatus.java:27)
+	at org.tmatesoft.svn.core.internal.wc2.ng.SvnNgOperationRunner.run(SvnNgOperationRunner.java:20)
+	at org.tmatesoft.svn.core.internal.wc2.SvnOperationRunner.run(SvnOperationRunner.java:21)
+	at org.tmatesoft.svn.core.wc2.SvnOperationFactory.run(SvnOperationFactory.java:1235)
+	at org.tmatesoft.svn.core.wc2.SvnOperation.run(SvnOperation.java:294)
+	at org.tmatesoft.svn.core.wc.SVNStatusClient.doStatus(SVNStatusClient.java:363)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:479)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.doStatusSVN(SVNClientHelper.java:460)
+	at oracle.dbtools.crest.fcp.vcs.svn.SVNClientHelper.getStatuses(SVNClientHelper.java:1454)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.findChanges(DataModelerChangesTimerTask.java:240)
+	at oracle.dbtools.crest.fcp.vcs.DataModelerChangesTimerTask.run(DataModelerChangesTimerTask.java:127)
+	at java.util.TimerThread.mainLoop(Timer.java:555)
+	at java.util.TimerThread.run(Timer.java:505)
